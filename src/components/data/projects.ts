@@ -4,8 +4,7 @@ import Project3 from "../../assets/Project3.png";
 import Project4 from "../../assets/Project4.png";
 import Project5 from "../../assets/Project5.png";
 import Project6 from "../../assets/Project6.png";
-// import Project7 from "../../assets/Project7.jpg";
-import pdbImage from "../../assets/1.jpg"
+import Project7 from "../../assets/Project7.png";
 
 export interface ProjectData {
   id: number;
@@ -87,9 +86,9 @@ export const projects: ProjectData[] = [
     description: `React 기반의 포트폴리오 웹사이트로, 라우팅을 통한 페이지 전환과 다양한 
     라이브러리 활용을 통해 사용자 중심의 UI/UX를 구현했습니다. 
     컴포넌트 단위로 구조화되어 유지보수성과 확장성이 뛰어납니다.`,
-    demoUrl: "https://yourdomain.com/demo2",
-    sourceUrl: "https://github.com/yourname/pdb-viewer",
-    image: pdbImage,
+    demoUrl: "https://my-portfolio-beta-lac.vercel.app/",
+    sourceUrl: "https://github.com/kmh8405/MyPortfolio",
+    image: Project7,
     techStack: ["React", "Typescript", "React Router", "Styled-components", "React-chrono"]
   },
 ];
