@@ -1,0 +1,227 @@
+.nav-sidebar {
+  width: 60px;
+  background: rgba(255, 255, 255, 0.05);
+  height: 100vh;
+  position: fixed;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.nav-sidebar:hover {
+  width: 150px;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+  padding: 20px 0;
+}
+
+.profile-pic-wrapper {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  margin-bottom: 0;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.online-dot {
+  margin-top: 10px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #00ff00;
+  border: 2px solid #0e1a1a;
+  border-radius: 50%;
+}
+
+.intro-text {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  padding: 0 10px;
+}
+
+.nav-sidebar:hover .intro-text {
+  opacity: 1;
+  max-height: 100px;
+}
+
+.nav-menu {
+  margin-top: 40px;
+  width: 100%;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-menu li {
+  width: 100%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #1b2f2f;
+}
+
+.icon {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.link-text {
+  white-space: nowrap;
+  margin-left: -9999px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.nav-sidebar:hover .link-text {
+  opacity: 1;
+  margin-left: 0;
+}
+
+/* 태블릿 이하 (1024px 이하) 대응 */
+@media (max-width: 1024px) {
+  .nav-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+  }
+
+  .profile-section,
+  .intro-text {
+    display: none;
+  }
+
+  .nav-menu {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .nav-menu li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+    font-size: 0.75rem;
+  }
+
+  .icon {
+    font-size: 20px;
+  }
+
+  .link-text {
+    display: block;
+    margin-left: 0;
+    opacity: 1;
+  }
+}
+
+/* 📱 모바일 화면 대응 */
+@media (max-width: 768px) {
+  .nav-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+  }
+
+  .profile-section,
+  .intro-text {
+    display: none;
+  }
+
+  .nav-menu {
+    margin: 0;
+    width: 100%;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+  }
+
+  .nav-menu li {
+    flex: 1;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .link-text {
+    display: none;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}
+
