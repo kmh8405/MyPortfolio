@@ -2,6 +2,10 @@
 import styles from '../styles/AboutMe.module.css';
 import { FaUser, FaBirthdayCake, FaMapMarkerAlt } from 'react-icons/fa';
 import Timeline from '../components/Timeline.tsx';
+import me from '../assets/me.jpg';
+import GraduationPic from '../assets/GraduationPic.jpg';
+import UniversityDiploma from '../assets/UniversityDiploma.jpg';
+import HighschoolDiploma from '../assets/HighschoolDiploma.jpg';
 
 const AboutMe = () => {
   return (
@@ -19,7 +23,7 @@ const AboutMe = () => {
 
       {/* 2열 그리드 - 이미지 + 자기소개 */}
       <div className={styles.gridTwo}>
-        <img src="../src/assets/me.jpg" alt="프로필 이미지" className={styles.profileImg} />
+        <img src={me} alt="프로필 이미지" className={styles.profileImg} />
         <div className={styles.introText}>
           <p><b>낯선 환경에서도 끝까지 해내는 집념이 저의 가장 큰 무기입니다.</b></p>
           <p>고1에 영어 한마디 못한 채 미국에 이민해 고등학교와 대학교까지 졸업했습니다.</p>
@@ -35,9 +39,9 @@ const AboutMe = () => {
       <div className={styles.gridTwoTimeline}>
         <Timeline />
         <div className={styles.TimelineImg}>
-          <img src="../src/assets/GraduationPic.jpg" alt="대학 졸업사진" className={styles.timelineImg} />
-          <img src="../src/assets/UniversityDiploma.jpg" alt="대학 졸업장" className={styles.timelineImg} />
-          <img src="../src/assets/HighschoolDiploma.jpg" alt="고등학교 졸업장" className={styles.timelineImg} />
+          <img src={GraduationPic} alt="대학 졸업사진" className={styles.timelineImg} />
+          <img src={UniversityDiploma} alt="대학 졸업장" className={styles.timelineImg} />
+          <img src={HighschoolDiploma} alt="고등학교 졸업장" className={styles.timelineImg} />
         </div>
       </div>
     </div>

@@ -1,11 +1,12 @@
 import Typewriter from '../components/typewriter';
 import styles from '../styles/Home.module.css';
+import HomeProfile from '../assets/HomeProfile.jpg';
 
 const Home : React.FC = () => {
     return (
         <div className={styles.homeContainer}>
         <div className={styles.homeImage}>
-          <img src="/src/assets/HomeProfile.jpg" alt="개발자 사진" />
+          <img src={HomeProfile} alt="개발자 사진" />
         </div>
         <div className={styles.homeText}>
           <h1>Hello World!</h1>

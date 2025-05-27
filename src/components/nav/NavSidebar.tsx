@@ -1,6 +1,7 @@
 import React from "react";
 import "./NavSidebar.css";
 import { FaHome, FaUser, FaCogs, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+import ProfilePic from '../../assets/ProfilePic.jpg';
 
 const NavSidebar: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const NavSidebar: React.FC = () => {
       <div className="profile-section">
         <div className="profile-pic-wrapper" title="현재 구직 중입니다.">
           <img
-            src="../src/assets/ProfilePic.jpg"
+            src={ProfilePic}
             alt="Profile"
             className="profile-pic"
           />
