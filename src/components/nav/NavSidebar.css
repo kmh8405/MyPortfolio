@@ -126,6 +126,20 @@
     z-index: 1000;
   }
 
+  .nav-sidebar:hover {
+    width: 100% !important;
+  }
+
+  .nav-sidebar:hover .intro-text {
+    opacity: 0 !important;
+    max-height: 0 !important;
+  }
+
+  .nav-sidebar:hover .link-text {
+    opacity: 1 !important;
+    margin-left: 0 !important;
+  }
+
   .profile-section,
   .intro-text {
     display: none;
@@ -224,4 +238,3 @@
     font-size: 22px;
   }
 }
-
