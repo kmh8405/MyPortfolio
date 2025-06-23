@@ -91,4 +91,15 @@ export const projects: ProjectData[] = [
     image: Project7,
     techStack: ["React", "Typescript", "React Router", "Styled-components", "React-chrono"]
   },
+  {
+    id: 8,
+    title: "WinFormsTCPChat",
+    description: `C# Windows Forms로 제작된 간단한 로컬 데스크탑 채팅 애플리케이션입니다.
+    TcpListener와 TcpClient, 그리고 NetworkStream을 활용해, 
+    서버-클라이언트 간 1:1 텍스트 채팅을 구현했습니다.`,
+    demoUrl: "",
+    sourceUrl: "https://github.com/kmh8405/WinFormsTCPChat",
+    image: Project8,
+    techStack: ["C#", ".NET 8.0 Framework", "System.Net.Sockets", "System.Threading"]
+  },
 ];
