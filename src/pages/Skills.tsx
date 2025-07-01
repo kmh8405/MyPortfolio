@@ -8,7 +8,7 @@ import {
 
 import { 
   SiTypescript, SiCplusplus, SiJquery, SiMysql, SiExpress, 
-  SiNotion, SiGoogle 
+  SiPostgresql, SiDbeaver, SiSupabase, SiNotion, SiGoogle 
 } from 'react-icons/si';
 
 import { TbBrandCSharp } from "react-icons/tb";
@@ -64,9 +64,15 @@ const Skills = () => {
         skills={[
           { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
           { name: 'jQuery', icon: <SiJquery color="#0769AD" /> },
+          { name: 'PostgreSQL', icon: <SiPostgresql color="#336791" /> },
+          { name: 'DBeaver', icon: <SiDbeaver color="#372923" /> },
+          { name: 'Supabase', icon: <SiSupabase color="#3ECF8E" /> },
         ]}
         descriptionItems={[
           'MySQL을 사용한 간단한 테이블 설계 및 CRUD(create, read, update, delete) 등을 포함한 기초 SQL 쿼리 작성 경험',
+          'PostgreSQL은 팀 프로젝트에서 C# ASP.NET Core Web API와의 연동을 위해 선택하였으며, 실제 기업에서도 많이 사용하는 안정성과 확장성이 강점인 관계형 DB',
+          '현재는 로컬 PostgreSQL을 사용 중이며, 향후 공용 DB로는 Supabase를 연동할 예정',
+          'DBeaver를 통해 테이블 구조 시각화, 데이터 조회 등 PostgreSQL 관리 작업을 간편하게 수행',
           'jQuery를 활용해 fadeIn/out, slide 등의 인터랙션 애니메이션 및 이벤트 처리 구현 경험',
           'Ajax를 활용해 외부 API로부터 데이터를 비동기적으로 호출 및 화면에 동적으로 렌더링',
           'PubMed의 efetch 엔드포인트를 사용해 특정 키워드의 최신 논문 데이터를 실시간으로 수집 및 표시',
