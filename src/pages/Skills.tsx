@@ -8,7 +8,7 @@ import {
 
 import { 
   SiTypescript, SiCplusplus, SiJquery, SiMysql, SiExpress, 
-  SiDotNet, SiPostgresql, SiDbeaver, SiSupabase, SiNotion, SiGoogle 
+  SiDotnet, SiPostgresql, SiDbeaver, SiSupabase, SiNotion, SiGoogle 
 } from 'react-icons/si';
 
 import { TbBrandCSharp } from "react-icons/tb";
