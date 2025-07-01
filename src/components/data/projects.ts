@@ -6,6 +6,7 @@ import Project5 from "../../assets/Project5.png";
 import Project6 from "../../assets/Project6.png";
 import Project7 from "../../assets/Project7.png";
 import Project8 from "../../assets/Project8.png";
+import TeamProject from "../../assets/TeamProject.png";
 
 export interface ProjectData {
   id: number;
@@ -102,5 +103,18 @@ export const projects: ProjectData[] = [
     sourceUrl: "https://github.com/kmh8405/WinFormsTCPChat",
     image: Project8,
     techStack: ["C#", ".NET 8.0 Framework", "System.Net.Sockets", "System.Threading"]
+  },
+  {
+    id: 9,
+    title: "Saramsoop (Team Project)",
+    description: `(현재 진행중) 많은 기업에서 활용되는 ERP 시스템에서 특히 모든 기업에서
+    사용 가능한 인사(HR)시스템입니다. 크게 4가지(직원관리, 근태관리, 급여관리, 결제관리)로 
+    나누어서 진행중이며, 부가 기능으로 채팅, 공지사항, 메모장 등을 추가할 예정입니다.
+    본 팀프로젝트는 프론트로는 React + Typescript, 백엔드로는 C#(ASP.NET Core), DB는 
+    PostgreSQL (공용DB는 Supabase)로 제작 진행중입니다.`,
+    demoUrl: "",
+    sourceUrl: "https://github.com/kmh8405/KMH_saramsoop",
+    image: TeamProject,
+    techStack: ["React", "Typescript", "React Router", "Axios", "Material UI", "ASP.NET Core", "PostgreSQL"]
   },
 ];
