@@ -65,7 +65,7 @@ const Skills = () => {
           { name: 'MySQL', icon: <SiMysql color="#4479A1" /> },
           { name: 'jQuery', icon: <SiJquery color="#0769AD" /> },
           { name: 'PostgreSQL', icon: <SiPostgresql color="#336791" /> },
-          { name: 'DBeaver', icon: <SiDbeaver color="#372923" /> },
+          { name: 'DBeaver', icon: <SiDbeaver color="#A0522D" />},
           { name: 'Supabase', icon: <SiSupabase color="#3ECF8E" /> },
         ]}
         descriptionItems={[
