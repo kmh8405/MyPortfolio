@@ -8,7 +8,7 @@ import {
 
 import { 
   SiTypescript, SiCplusplus, SiJquery, SiMysql, SiExpress, 
-  SiPostgresql, SiDbeaver, SiSupabase, SiNotion, SiGoogle 
+  SiDotNet, SiPostgresql, SiDbeaver, SiSupabase, SiNotion, SiGoogle 
 } from 'react-icons/si';
 
 import { TbBrandCSharp } from "react-icons/tb";
@@ -48,12 +48,14 @@ const Skills = () => {
           { name: 'C', icon: <FaCuttlefish color="#A8B9CC" /> },
           { name: 'C++', icon: <SiCplusplus color="#00599C" /> },
           { name: 'C#', icon: <TbBrandCSharp color="#239120" /> },
+          { name: 'ASP.NET Core', icon: <SiDotnet color="#512BD4" /> },
           { name: 'Python', icon: <FaPython color="#3776AB" /> },
         ]}
         descriptionItems={[
           'Node.js 학습을 통해 HTTP 처리, 라우팅, 파일 시스템, npm 등 기본 개념을 이해하고 간단한 서버 구축 경험 보유',
           'C/C++ 언어를 활용한 기본 문법 및 알고리즘 문제 풀이 경험',
           'C#과 .NET Framework 기반으로 Windows Forms 애플리케이션 개발 경험 (OCR + DeepL API 기반 번역 애플리케이션 구현)',
+          'ASP.NET Core Web API를 활용해 React와 PostgreSQL 간의 데이터 연동을 위한 백엔드 서버 구현 (Entity Framework Core 기반)',
           'Python과 Jupyter Notebook을 사용한 웹 크롤링 경험 (HTML 구조 분석 및 데이터 추출)',
         ]}
       />
